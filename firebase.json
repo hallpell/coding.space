@@ -20,6 +20,11 @@
         "type": 301
       },
       {
+        "source": "/ymca",
+        "destination": "https://docs.google.com/spreadsheets/d/1Crei5OdD3RsSzjsI1lJ-qfkZ47c_Nu3LcGDySn5VaQI/edit?usp=sharing",
+        "type": 301
+      },
+      {
         "source": "/aboutme",
         "destination": "./aboutme.html",
         "type": 301
@@ -179,6 +184,16 @@
       {
         "source": "/welcome",
         "destination": "/welcome.html",
+        "type": 301
+      },
+      {
+        "source": "/scratchjr",
+        "destination": "https://codejr.org/scratchjr/index.html",
+        "type": 301
+      },
+      {
+        "source": "/fll2025",
+        "destination": "https://my.firstinspires.org/JoinTeam/Welcome/cb197fb3-8b54-11f0-8cd4-00505699b848",
         "type": 301
       }
     ],

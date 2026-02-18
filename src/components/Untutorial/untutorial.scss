@@ -43,3 +43,20 @@
     }
   }
 }
+
+#untutorial .ql-editor {
+  padding-top: 0;
+  background-color: transparent;
+
+  p {
+    margin-bottom: 0.5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.mlfk img {
+  width: 75%;
+}

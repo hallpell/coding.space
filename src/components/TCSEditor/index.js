@@ -68,7 +68,7 @@ const TCSEditor = (props) => {
   if (!!disabled) {
     return (
       <div className={"field " + className}>
-        <div name={name} dangerouslySetInnerHTML={{ __html: text }} />
+        <div className="ql-editor" style={{ padding: 0 }} name={name} dangerouslySetInnerHTML={{ __html: text }} />
       </div>
     );
   } else if (!disabled && !editing) {
@@ -93,7 +93,7 @@ const TCSEditor = (props) => {
       // Changed this.props.name to name
       return (
         <div className={"field " + className}>
-          <div dangerouslySetInnerHTML={{ __html: text }} />
+          <div className="ql-editor" style={{ padding: 0 }} dangerouslySetInnerHTML={{ __html: text }} />
           <button className="editor-button" onClick={handleEdit}>
             {buttonText}
           </button>
@@ -102,7 +102,7 @@ const TCSEditor = (props) => {
     }
     return (
       <div className={"field " + className}>
-        <div name={name} dangerouslySetInnerHTML={{ __html: text }} />
+        <div className="ql-editor" style={{ padding: 0 }} name={name} dangerouslySetInnerHTML={{ __html: text }} />
         <button className="editor-button" onClick={handleEdit}>
           {buttonText}
         </button>
@@ -160,8 +160,14 @@ const TCSEditor = (props) => {
 };
 
 TCSEditor.modules = {
-  // ...
-
+  toolbar: [
+    [{ 'header': [1, 2, 3, false] }],
+    ['bold', 'italic', 'underline', 'code'],
+    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+    [{ 'indent': '-1'}, { 'indent': '+1' }],
+    ['link', 'code-block'],
+    ['clean']
+  ],
   htmlEditButton: {
     debug: true, // logging, default:false
     msg: "Edit the content in HTML format", //Custom message to display in the editor, default: Edit HTML here, when you click "OK" the quill editor's contents will be replaced

@@ -9,3 +9,7 @@ export const STUDENT = "Student";
 export const SCRATCHJR = "Scratch Jr.";
 export const CODE4CHANGE = "Code 4 Change";
 export const UNTUTORIALS = "Untutorials";
+export const MACHINE_LEARNING = "Machine Learning";
+export const UNITY = "Unity";
+export const DATA_SCIENCE = "Data Science";
+export const ML_FOR_KIDS = "ML for Kids";
